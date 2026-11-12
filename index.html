@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Gerador de senhas</h1>
+        <section class="formulario">
+            <form id="formulario-senha">
+                <label for="tamanho">Comprimento da senha:</label>
+                <input type="number" id="tamanho" name="tamanho" min="4" max="24" value="12" required><br>
+
+                <label for="maiusculas">
+                    <input type="checkbox" id="maiusculas" name="maiusculas">
+                    Incluir letras maiúsculas<br>
+                </label>
+
+                <label for="minusculas">
+                    <input type="checkbox" id="minusculas" name="minusculas">
+                    Incluir letras minúsculas<br>
+                </label>
+
+                <label for="numeros">
+                    <input type="checkbox" id="numeros" name="numeros">
+                    Incluir números<br>
+                </label>
+
+                <label for="especiais">
+                    <input type="checkbox" id="especiais" name="especiais">
+                    Incluir caracteres especiais<br><br>
+                </label>
+
+                <button type="button" id="gerarSenha">Gerar senha</button>
+                <button type="button" id="limparSenha">Limpar senha</button>
+            </form>
+        </section>
+
+        <section class="resultado">
+            <h2>Senha gerada:</h2>
+            <input type="text" id="senhaGerada" readonly>
+            <button type="button" id="copiarSenha">Copiar senha</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
