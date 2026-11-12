@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #101014;
+    font-family: 'DM Sans', sans-serif;
+    color: #eaeaea;
+}
+
+main {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #d8b4fe;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.formulario {
+    background: #1a1a22;
+    padding: 35px;
+    border: 1px solid #30303d;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 0.95rem;
+    color: #d1d1d8;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: #252530;
+    border: 1px solid #3b3b49;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #c084fc;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #a855f7;
+    margin-right: 8px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #a855f7;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #9333ea;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#limparSenha {
+    background: transparent;
+    border: 1px solid #a855f7;
+    color: #d8b4fe;
+}
+
+#limparSenha:hover {
+    background: rgba(168, 85, 247, 0.12);
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#senhaGerada {
+    width: 100%;
+    padding: 12px;
+    background: #252530;
+    border: 1px solid #3b3b49;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+#copiarSenha {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    border: 1px solid #a855f7;
+    border-radius: 8px;
+    background: #252530;
+    color: #d8b4fe;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#copiarSenha:hover {
+    background: #a855f7;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+#copiarSenha:active {
+    transform: translateY(0);
+}
